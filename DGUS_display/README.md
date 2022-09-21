@@ -1,14 +1,16 @@
 # DGUS-reloaded-Klipper
+# DGUSPrinterMenu
 
 DWIN T5UID1 touchscreen firmware for 3D printers running Klipper.
+DGUS touchscreen firmware for 3D printers running Klipper with support for custom menus.
 
 Requires using a modified version of Klipper to work properly, which can be found in [this repository](https://github.com/Desuuuu/klipper).
+Requires using a modified version of Klipper, which can be found in [this reposito
 
 ## Disclaimer
 **This software is provided without any warranty. You are solely responsible for your use of it.**
 
 ## Features
-
 This firmware was inspired by Creality printers' touchscreen firmware. Some features include:
 
 * Status message available on most screens
@@ -23,7 +25,9 @@ Focus was also put on making this firmware as easy and safe to use as possible f
 
 ## Compatibility
 This firmware **should** be compatible with printers equipped with the following hardware:
+This firmware is available for the following models of touchscreen:
 
+* T5UID1, 480x272 resolution
 * 480x272 DWIN T5UID1 touchscreen
 * Single extruder
 * Heated bed
@@ -38,7 +42,8 @@ Testing has been done on the following machines:
 
 ## Prerequisites
 You have to use this [modified version of Klipper](https://github.com/Desuuuu/klipper). Make sure to enable the serial connection to the screen while configuring the MCU firmware.
-
+You have to use this [modified version of Klipper](https://github.com/Desuuuu/klipper/tree/dgus-display).
+Please refer to the [Configuration reference](https://github.com/Desuuuu/klipper/blob/dgus-display/docs/Config_Reference.md#dgus-display-support) for the list of available options.
 The only modification required to your Klipper configuration file is to add this section:
 ```
 [t5uid1]
@@ -46,8 +51,12 @@ firmware: dgus_reloaded
 ```
 
 For a list of available options, see the [sample-t5uid1.cfg](https://github.com/Desuuuu/klipper/blob/master/config/sample-t5uid1.cfg) file.
+See the [sample-dgus-display.cfg](https://github.com/Desuuuu/klipper/blob/dgus-display/config/sample-dgus-display.cfg) file for a basic example.
 
 Example Klipper configurations are available in [this repository](https://github.com/Desuuuu/DGUS-reloaded-Klipper-config).
+
+## Installation
+Please refer to the [Wiki](https://github.com/Desuuuu/DGUSPrinterMenu/wiki) for detailed installation steps.
 
 ## Wiki
 * [Flashing the firmware](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Flashing-the-firmware)
@@ -67,6 +76,7 @@ You can then run the rename script and flash your touchscreen using the resultin
 | [Klipper logo](https://github.com/KevinOConnor/klipper)                        | [KevinOConnor](https://github.com/KevinOConnor)           | Yes      | [GPLv3](http://www.gnu.org/licenses/gpl-3.0.html)                     |
 | [Feather icons](https://feathericons.com/)                                     | [Cole Bemis](https://twitter.com/colebemis)               | Yes      | [MIT](https://github.com/feathericons/feather/blob/master/LICENSE)    |
 | [3D Printing Line icons](https://www.iconfinder.com/iconsets/3d-printing-line) | [Sam Baines](https://www.iconfinder.com/conceptbaines)    | Yes      | [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/legalcode)    |
+| [3D Printing Line icons](https://www.iconfinder.com/iconsets/3d-printing-line) | [Sam Baines](https://www.iconfinder.com/conceptbaines)    | Yes      | [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/us/legalcode) |
 | [Fan icon](https://thenounproject.com/term/fan/1153915/)                       | [Atif Arshad](https://thenounproject.com/atifarshad/)     | Yes      | [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/us/legalcode) |
 | [Snow icon](https://thenounproject.com/term/snow/1959859/)                     | [Shashank Singh](https://thenounproject.com/rshashank19/) | Yes      | [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/us/legalcode) |
 | [Electric Motor icon](https://thenounproject.com/term/electric-motor/2734486/) | [Verry](https://thenounproject.com/verry.dsign.creative)  | Yes      | [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/us/legalcode) |
