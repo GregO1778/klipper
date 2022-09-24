@@ -15,4 +15,4 @@ WS_FILES="$WS_FILES -o -name '*.yaml' -o -name '*.yml'"
 WS_FILES="$WS_FILES -o -name '*.css' -o -name '*.yaml' -o -name '*.yml'"
 WS_FILES="$WS_FILES -o -name '*.test' -o -name '*.config'"
 WS_FILES="$WS_FILES -o -iname '*.lds' -o -iname 'Makefile' -o -iname 'Kconfig'"
-eval find $WS_DIRS $WS_EXCLUDE $WS_FILES | xargs ./scripts/check_whitespace.py
+eval find $WS_DIRS $WS_EXCLUDE $WS_FILES | xargs python ./scripts/check_whitespace.py
