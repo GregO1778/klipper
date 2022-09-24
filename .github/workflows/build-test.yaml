@@ -14,14 +14,15 @@ jobs:
       with:
         path: ci_cache
         key: ${{ runner.os }}-build-${{ hashFiles('scripts/ci-install.sh') }}
-    script:
-    - chmod +x ./scripts/ci-install.sh
-    - chmod +x ./scripts/ci-build.sh
-
+    
     - name: Prepare tests
+    script:
+      - chmod +x ./scripts/ci-install.sh
       run: ./scripts/ci-install.sh
 
     - name: Test
+    script:
+      - chmod +x ./scripts/ci-build.sh
       run: ./scripts/ci-build.sh 2>&1
 
     - name: Upload micro-controller data dictionaries
