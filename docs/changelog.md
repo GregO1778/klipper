@@ -46,13 +46,13 @@ membership for example caused issues when installing mjpg-streamer while not usi
 Other issues could occur when trying to flash an MCU on Debian or Ubuntu distributions where a user might not be part
 of the dialout group by default. A check for the tty group is also done. The tty group is needed for setting
 up a linux MCU (currently not yet supported by KIAUH).
-* There is an issue when trying to install Mainsail or Fluidd on Ubuntu 21.10. Permissions on that distro seem to have seen a rework 
+* There is an issue when trying to install Mainsail or Fluidd on Ubuntu 21.10. Permissions on that distro seem to have seen a rework
  in comparison to 20.04 and users will be greeted with an "Error 403 - Permission denied" message after installing one of Klippers webinterfaces.
 I still have to figure out a viable solution for that.
 
 ### 2021-09-28
 * New Feature! Added an installer for the Telegram Bot for Moonraker by [nlef](https://github.com/nlef).
-Checkout his project! Remember to report all issues and/or bugs regarding that project in its corresponding repo and not here 😛.\
+Checkout his project! Remember to report all issues and/or bugs regarding that project in its corresponding repo and not here.\
 You can find it here: https://github.com/nlef/moonraker-telegram-bot
 
 ### 2021-09-24
@@ -152,7 +152,7 @@ Each service gets its corresponding instance added to the service filename.
 
 * The option of adding more trusted clients to the moonraker.conf file was dropped. Since you can edit this file right inside of Mainsail or Fluidd, only some basic entries are made which get you running.
 
-* I bet i have missed mentioning other stuff as well because it took me quite some time to re-write many functions. So i just hope you like the new version 😄
+* I bet i have missed mentioning other stuff as well because it took me quite some time to re-write many functions. So i just hope you like the new version
 
 ### 2020-11-28
 

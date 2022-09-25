@@ -114,14 +114,14 @@ class ZCalibrationHelper:
             # set bed site from BED_POSITION parameter
             self.bed_site = self._parse_site("BED_POSITION", site_attr)
         elif self._get_site("bed_xy_position", "probe_bed", True) is not None:
-            # set bed site from configuration
-            self.bed_site = self._get_site("bed_xy_position", "probe_bed", False)
+          # set bed site from configuration
+          self.bed_site = self._get_site("bed_xy_position", "probe_bed", False)
         else:
             # else get the mesh's relative reference index point
             # a round mesh/bed would not work here so far...
             try:
                 mesh = self.printer.lookup_object('bed_mesh', default=None)
-                rri = mesh.bmc.relative_reference_index    
+                rri = mesh.bmc.relative_reference_index
                 self.bed_site = mesh.bmc.points[rri]
                 logging.debug("Z-CALIBRATION probe bed_x=%.3f bed_y=%.3f"
                               % (self.bed_site[0], self.bed_site[1]))
@@ -181,7 +181,7 @@ class ZCalibrationHelper:
         gcmd.respond_info(
             "probe accuracy results: maximum %.6f, minimum %.6f, range %.6f,"
             " average %.6f, median %.6f, standard deviation %.6f" % (
-            max_value, min_value, range_value, avg_value, median, sigma))        
+            max_value, min_value, range_value, avg_value, median, sigma))
     def _get_site(self, name, legacy_prefix, optional=False):
         legacy_x = self.config.getfloat("%s_x" % (legacy_prefix), -1.0)
         legacy_y = self.config.getfloat("%s_y" % (legacy_prefix), -1.0)

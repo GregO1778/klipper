@@ -39,7 +39,7 @@ function update_ui() {
 
 function update_menu() {
   do_action "" "update_ui"
-  
+
   local action
   while true; do
     read -p "${cyan}####### Perform action:${white} " action
@@ -88,7 +88,7 @@ function update_all() {
       print_confirm "Everything is already up-to-date!"
       echo; break
     fi
-    
+
     echo
     top_border
     echo -e "|  The following installations will be updated:         |"
@@ -118,7 +118,7 @@ function update_all() {
     echo -e "|  ${cyan}● System${white}                                             |"
 
     bottom_border
-    
+
     local yn
     read -p "${cyan}###### Do you want to proceed? (Y/n):${white} " yn
     case "${yn}" in
