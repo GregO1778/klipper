@@ -16,6 +16,10 @@ mkdir -p ${BUILD_DIR} ${CACHE_DIR}
 ######################################################################
 
 echo -e "\n\n=============== Install system dependencies\n\n"
+sudo apt-get --allow-releaseinfo-change update
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
 PKGS="virtualenv python-dev libffi-dev build-essential"
 PKGS="${PKGS} gcc-avr avr-libc"
 PKGS="${PKGS} libnewlib-arm-none-eabi gcc-arm-none-eabi binutils-arm-none-eabi"
