@@ -77,7 +77,7 @@ $(OUT)klipper.elf: $(OBJS_klipper.elf)
 $(OUT)%.o.ctr: $(OUT)%.o
 	$(Q)$(OBJCOPY) -j '.compile_time_request' -O binary $^ $@
 
-$(OUT)compile_time_request.o: $(patsubst %.c, $(OUT)src/%.o.ctr,$(src-y)) $(PYTHON) ./scripts/buildcommands.py
+$(OUT)compile_time_request.o: $(patsubst %.c, $(OUT)src/%.o.ctr,$(src-y)) ./scripts/buildcommands.py
 	@echo "  Building $@"
 	$(Q)cat $(patsubst %.c, $(OUT)src/%.o.ctr,$(src-y)) | tr -s '\0' '\n' > $(OUT)compile_time_request.txt
 	$(Q)$(PYTHON) ./scripts/buildcommands.py -d $(OUT)klipper.dict -t "$(CC);$(AS);$(LD);$(OBJCOPY);$(OBJDUMP);$(STRIP)" $(OUT)compile_time_request.txt $(OUT)compile_time_request.c
