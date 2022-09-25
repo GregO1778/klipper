@@ -59,4 +59,3 @@ done
 #    finish_prod mcu_compile "$TARGET"
 #    cp out/klipper.dict ${DICTDIR}/$(basename ${TARGET} .config).dict
 #done
-
