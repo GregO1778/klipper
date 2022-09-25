@@ -16,7 +16,7 @@ mkdir -p ${BUILD_DIR} ${CACHE_DIR}
 ######################################################################
 
 echo -e "\n\n=============== Install system dependencies\n\n"
-sudo apt-get --allow-releaseinfo-change update
+#sudo apt-get --allow-releaseinfo-change update
 #sudo apt-get update
 #sudo apt-get upgrade
 #sudo apt-get dist-upgrade
