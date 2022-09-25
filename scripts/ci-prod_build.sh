@@ -25,7 +25,7 @@ for TARGET in ./cr10smart.config ; do
     make V=1
     size out/*.elf
     size out/*.bin
-	    cp out/*.bin /prod/
+        cp out/*.bin /prod/
     finish_prod mcu_compile "$TARGET"
     cp out/klipper.dict ${DICTDIR}/$(basename ${TARGET} .config).dict
 done
