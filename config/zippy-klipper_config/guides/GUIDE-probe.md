@@ -1,6 +1,6 @@
 <!--
  Copyright (c) 2022 Chris Laprade (chris@rootiest.com)
- 
+
  This software is released under the MIT License.
  https://opensource.org/licenses/MIT
 -->
@@ -18,7 +18,7 @@
 
 The following is a typical config for a CRTouch:
 
-    [bltouch] 
+    [bltouch]
     sensor_pin: ^PB1
     control_pin: PB0
     x_offset: 0                  # Change to fit your printer
@@ -34,11 +34,11 @@ You may find that your bl-touch requires slightly different configurations. Ther
 
 This is explained in detail [here in the docs](https://www.klipper3d.org/BLTouch.html#bl-touch-clones).
 
-Note that the `samples_tolerance` used in the above example is quite low so it frequently will probe a point several times and use the average. 
+Note that the `samples_tolerance` used in the above example is quite low so it frequently will probe a point several times and use the average.
 
 You can change the samples and tolerance settings to fit your needs. These settings are explained in more detail in the docs [here](https://www.klipper3d.org/Config_Reference.html#probe) and [here](https://www.klipper3d.org/Config_Reference.html#bltouch).
 
-You ***will*** need to change the x and y offsets to be accurate for your probe's position relative to the nozzle. Follow [the directions in the docs](https://www.klipper3d.org/Probe_Calibrate.html) to measure those values. 
+You ***will*** need to change the x and y offsets to be accurate for your probe's position relative to the nozzle. Follow [the directions in the docs](https://www.klipper3d.org/Probe_Calibrate.html) to measure those values.
 
 Then you will also need to calibrate the z-offset. (Again, follow [the docs](https://www.klipper3d.org/Probe_Calibrate.html#calibrating-probe-z-offset))
 
@@ -87,14 +87,14 @@ The probe `x_offset` is the X "nozzle coordinates" minus the X "probe coordinate
 
 The probe `y_offset` is the Y "nozzle coordinates" minus the Y "probe coordinates"
 
-Put those values in your config and restart. 
+Put those values in your config and restart.
 
 Done!
 
 
 ### Z offset walkthrough:
 
-Klipper has a built-in function for finding the z-offset. 
+Klipper has a built-in function for finding the z-offset.
 
 This is covered [in the docs here](https://www.klipper3d.org/Probe_Calibrate.html#calibrating-probe-z-offset).
 
@@ -149,7 +149,7 @@ If you don't have some manner of control interface to perform the baby-stepping,
 
     # Move the z-axis offset 0.2mm higher
     SET_GCODE_OFFSET Z=0.2
-    
+
     # Move the z-axis offset 0.3mm lower
     SET_GCODE_OFFSET Z=-0.3
 

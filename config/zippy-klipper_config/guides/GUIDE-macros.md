@@ -1,6 +1,6 @@
 <!--
  Copyright (c) 2022 Chris Laprade (chris@rootiest.com)
- 
+
  This software is released under the MIT License.
  https://opensource.org/licenses/MIT
 -->
@@ -93,7 +93,7 @@ I am now including the `M109`/`M190` dummy commands in the SuperSlicer/PrusaSlic
 
 SuperSlicer *shouldn't* when selecting `Klipper` for the G-code Flavor. However, on the latest version the merge with the PrusaSlicer source overwrote this check and it behaves the same way as the others. This has been [confirmed fixed for the next SuperSlicer release](https://github.com/supermerill/SuperSlicer/issues/875) and I will update the guide when that changes.
 
-It's also worth noting this shouldn't be a serious concern in most cases. At most, allowing the Slicer to automatically add those commands after the macro may just cause a slight hesitation/lag immediately before the print begins. 
+It's also worth noting this shouldn't be a serious concern in most cases. At most, allowing the Slicer to automatically add those commands after the macro may just cause a slight hesitation/lag immediately before the print begins.
 
 However, if you wish to do something like offset temperature values using code in your macro, you may have an issue without the dummy commands because the Slicer will set them back at the start of the first layer.
 
@@ -109,7 +109,7 @@ You could even use .gcode files on multiple printers with different start requir
 
 It's actually possible to account for those factors as well if you really want to.
 
-Which brings us to the final benefit I'm going to mention: 
+Which brings us to the final benefit I'm going to mention:
 
 Macros can use more complex logic that doesn't exist in basic gcode commands that can be used in the slicer start gcode. Using a scripting language called Jinja2, we can perform logic tests in macros (if statements, variables, etc)
 
@@ -124,7 +124,7 @@ Here's a really basic example:
 
 This is not a Jinja2 guide, so I will just briefly explain what this does:
 
-The first line gets the nozzle diameter from Klipper using [the Status Reference function described here](https://www.klipper3d.org/Status_Reference.html#toolhead). 
+The first line gets the nozzle diameter from Klipper using [the Status Reference function described here](https://www.klipper3d.org/Status_Reference.html#toolhead).
 
 It also assigns a default in case it's unable to retrieve that value (unlikely)
 
@@ -136,7 +136,7 @@ Otherwise, we set it to 100%.
 
 This is just a very basic example, Jinja2 allows us to basically write mini-programs that make our macros behave dynamically.
 
-The [Status Reference](https://www.klipper3d.org/Status_Reference.html) functionality in Klipper allows us to retrieve basically ***any*** value the printer can access. 
+The [Status Reference](https://www.klipper3d.org/Status_Reference.html) functionality in Klipper allows us to retrieve basically ***any*** value the printer can access.
 
 You can even read values directly from the config file, or check whether a `SAVE_CONFIG` is necessary and what items are queued to be saved.
 

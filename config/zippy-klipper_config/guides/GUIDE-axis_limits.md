@@ -1,6 +1,6 @@
 <!--
  Copyright (c) 2022 Chris Laprade (chris@rootiest.com)
- 
+
  This software is released under the MIT License.
  https://opensource.org/licenses/MIT
 -->
@@ -21,7 +21,7 @@ You want to make sure your 0,0 position is the **front-left corner of your bed/p
 
 This will likely mean your endstop positions have negative values. That's normal.
 
-In almost all cases the `position_endstop` and `position_min` values will be the same. 
+In almost all cases the `position_endstop` and `position_min` values will be the same.
 
 Unless your endstops are at the max positions in which case the `position_endstop` and `position_max` will be the same.
 
@@ -62,7 +62,7 @@ Remember to calibrate the `position_min` and `0,0` as described above *before* b
 
 Once your `0,0` is correct, set your `position_max` for each axis to a value much higher than you know is possible, for an Ender 3 try 300 for each `position_max`. If your printer has a larger bed, use a suitably large number that would allow for moves far beyond the limits of your machine.
 
-Don't worry, this is temporary and we are going to be careful for the short time we have those unreasonable values. 
+Don't worry, this is temporary and we are going to be careful for the short time we have those unreasonable values.
 
 Save the config and `FIRMWARE_RESTART`.
 
@@ -73,7 +73,7 @@ We are doing it carefully for 2 reasons:
 1. To not damage the printer
 2. Because once it skips/grinds the coordinate values are no longer accurate and you will have to restart and retry.
 
-You want to find the coordinates where it first hits the physical limit (grinds/skips) and subtract 1mm. 
+You want to find the coordinates where it first hits the physical limit (grinds/skips) and subtract 1mm.
 
 Do this for each axis.
 
@@ -89,7 +89,7 @@ Your physical range should now be properly configured. Test it by moving with th
 
 ## What about  Bed Size
 
-But what about the bed size? 
+But what about the bed size?
 
 Obviously we can't print within that entire physical range we just established. We only want to be able to **print** where the bed is.
 
@@ -97,9 +97,9 @@ We've already correctly established the first half by setting the front-left of 
 
 The second half is finding the position of the back-right corner.
 
-> IMPORTANT: You don't want to just depend on the specs, you want the exact values according to your machine itself because that's what matters here, not the specs. 
+> IMPORTANT: You don't want to just depend on the specs, you want the exact values according to your machine itself because that's what matters here, not the specs.
 >
-> The printer doesn't care what the manufacturer claims, and there's a lot of factors which can reduce/change our travel/printing boundaries. 
+> The printer doesn't care what the manufacturer claims, and there's a lot of factors which can reduce/change our travel/printing boundaries.
 >
 >We want to calibrate for ***your*** machine no matter what its range is, or is supposed to be.
 
@@ -117,7 +117,7 @@ Home the printer and then move the z-axis slowly to its physical maximum.
 
 This also requires caution, you may or may not physically contact anything, but there's still a maximum range for your Z axis and you want to set it accurately.
 
-Note the Z coordinates at that position and assign that value to your `z_stepper` `max_position`. This will establish your maximum travel height. 
+Note the Z coordinates at that position and assign that value to your `z_stepper` `max_position`. This will establish your maximum travel height.
 
 You can also enter that value in your Slicer settings as the maximum height.
 

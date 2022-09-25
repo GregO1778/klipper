@@ -1,6 +1,6 @@
 <!--
  Copyright (c) 2022 Chris Laprade (chris@rootiest.com)
- 
+
  This software is released under the MIT License.
  https://opensource.org/licenses/MIT
 -->
@@ -21,7 +21,7 @@ It's a way to communicate with your printer's mcu(s), much like USB and UART. Un
 
 The most popular reason is to connect a toolboard.
 
-Take a look at your current printhead. How many wires does it take to manage everything on your printhead? 
+Take a look at your current printhead. How many wires does it take to manage everything on your printhead?
 
 Probably quite a few.
 
@@ -61,13 +61,13 @@ It's a great choice for Ender-style printers and is actually improving as the co
 
 Further, we can take advantage of this off-label feature and use it to host a CAN network as well.
 
-As the SKR-Pico is using that RP2040 (Raspberry Pi Pico) chip, it's compatible with [the recent work from Kevin O'Connor](https://github.com/KevinOConnor/can2040) to enable CANbus bridging on those chips in Klipper. 
+As the SKR-Pico is using that RP2040 (Raspberry Pi Pico) chip, it's compatible with [the recent work from Kevin O'Connor](https://github.com/KevinOConnor/can2040) to enable CANbus bridging on those chips in Klipper.
 
 This allows you to assign pins to be used for CANbus communication and the rest of the board works exactly the same as before except instead of registering as a USB device, it shows up as a CAN device on the CAN network that it is hosting itself.
 
 You do not lose any functionality of the board by doing this, only gain CANbus capability.
 
-No CANhat or other devices required! 
+No CANhat or other devices required!
 
 It *does* require an inexpensive CAN transceiver.
 
@@ -125,7 +125,7 @@ Here is what it would look like with the included cable:
         4. 3.3V     -> Red     -> 5V
         5. EMPTY    -> Red     -> 5V
 
-You will connect the CAN signal pins to the screw terminals on the opposite end of the transceiver. 
+You will connect the CAN signal pins to the screw terminals on the opposite end of the transceiver.
 
 You will connect the 24V and GND of your CANboard(s) to your PSU.
 
@@ -241,7 +241,7 @@ In that file, you will need to change:
 to:
 
     [mcu]
-    canbus_uuid: 41674b3a9356 
+    canbus_uuid: 41674b3a9356
 
 NOTE: Both your id's will be different than those shown above, they are unique to your board. I just used mine as an example.
 
@@ -269,7 +269,7 @@ Press `Ctrl+X` to exit the editor, followed by `Y` and `Enter` to save changes. 
 
 After making this change I had no issues starting the printer no matter how it was shut down.
 
-## Congrats! 
+## Congrats!
 
 You now have a CANbus network and your first CANbus device!
 
@@ -283,9 +283,9 @@ We've now installed the necessary hardware and flashed the firmware so we have a
 
 So all you need to do is connect a CANbus board which is flashed with CANbus Klipper firmware to the CAN transceiver.
 
-I use [a BigTreeTech EBB](https://github.com/bigtreetech/EBB) which has great documentation for how to configure it for this purpose as well as pre-made firmware images for CANbus mode. 
+I use [a BigTreeTech EBB](https://github.com/bigtreetech/EBB) which has great documentation for how to configure it for this purpose as well as pre-made firmware images for CANbus mode.
 
-You will need to configure and flash your boards as required/documented by the manufacturer. 
+You will need to configure and flash your boards as required/documented by the manufacturer.
 
 This process varies greatly between boards/chips so I'm not going to go into detail and assume you have done so successfully.
 
@@ -296,7 +296,7 @@ At this point you can (with the power off) connect that board's CAN port as foll
 3. CANL -> CANL on the transceiver
 4. CANH -> CANH on the transceiver
 
-Boot back up and power everything on. 
+Boot back up and power everything on.
 
 Run this command again:
 
@@ -313,7 +313,7 @@ You can configure it the same as we did the main printer board. For my EBB it lo
 
 Update your config with that canbus id and you should be good to go.
 
-If you have not set up the entire toolboard config yet you can juse just that `[mcu]` section to test, with no other components. 
+If you have not set up the entire toolboard config yet you can juse just that `[mcu]` section to test, with no other components.
 
 It should still boot though none of its components/features will function without their associated configs.
 
@@ -388,7 +388,7 @@ I also matched the `current` values to what I used on my `[stepper_z]` config se
 
 We also have 3 PWM fan pins available now which can be used for things like a system/mcu fan, an exhaust fan, bed fans (for heated chamber), etc.
 
-We also have a thermistor connector which can be used with a cheap, readily-available thermistor to measure temperature elsewhere on the printer. I used my old stock Ender thermistor and stuck it on one of my stepper motors to monitor the stepper temperature. 
+We also have a thermistor connector which can be used with a cheap, readily-available thermistor to measure temperature elsewhere on the printer. I used my old stock Ender thermistor and stuck it on one of my stepper motors to monitor the stepper temperature.
 
 Here is my config for that:
 

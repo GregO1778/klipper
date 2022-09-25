@@ -1,6 +1,6 @@
 <!--
  Copyright (c) 2022 Chris Laprade (chris@rootiest.com)
- 
+
  This software is released under the MIT License.
  https://opensource.org/licenses/MIT
 -->
@@ -75,7 +75,7 @@ So in this example, our `mesh_max` has to be `199, 189` or less.
 
 If you do not do this correctly your `BED_MESH_CALIBRATE` command will fail with a move-out-of-range error.
 
-If that happens, make note of the invalid coordinates in the error message. These will provide a clue for the source of the problem. 
+If that happens, make note of the invalid coordinates in the error message. These will provide a clue for the source of the problem.
 
 It will likely be one of your axis moving beyond the `max_position`.
 
@@ -85,11 +85,11 @@ If the error shows a move to negative coordinates and/or the failure occurs on t
 
 ## Probe Limits Macro
 
-You can use [this GET_PROBE_LIMITS macro](resources/GET_PROBE_LIMITS.cfg) to find the physical minimum and maximum probe coordinates as well as the current probe coordinates. 
+You can use [this GET_PROBE_LIMITS macro](resources/GET_PROBE_LIMITS.cfg) to find the physical minimum and maximum probe coordinates as well as the current probe coordinates.
 
 This can be helpful if you'd like to avoid doing the math yourself as it will display the range of possible values that can be successfully used for `mesh_min` and `mesh_max`.
 
-To use this macro, download the `GET_PROBE_LIMITS.cfg` file to your `~/klipper_config` directory and add the following near the top of your `printer.cfg` file: 
+To use this macro, download the `GET_PROBE_LIMITS.cfg` file to your `~/klipper_config` directory and add the following near the top of your `printer.cfg` file:
 
     [include GET_PROBE_LIMITS.cfg]
 

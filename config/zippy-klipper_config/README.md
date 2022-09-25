@@ -52,10 +52,10 @@ It is likely to fail/crash on your system in its current state!
 Its only contents (aside from automated overrides) are:
 
     # Rootiest Zippy Klipper config
-    
+
     # Machine  directory
     [include machine/*.cfg]
-    
+
     # Macros directory
     [include macros/*.cfg]
 
