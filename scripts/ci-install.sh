@@ -16,10 +16,11 @@ mkdir -p ${BUILD_DIR} ${CACHE_DIR}
 ######################################################################
 
 echo -e "\n\n=============== Install system dependencies\n\n"
-#sudo apt-get --allow-releaseinfo-change update
-#sudo apt-get update
-#sudo apt-get upgrade
-#sudo apt-get dist-upgrade
+sudo apt-get --allow-releaseinfo-change update
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+#PKGS="virtualenv python-dev libffi-dev build-essential"
 PKGS="virtualenv python3-dev libffi-dev build-essential"
 PKGS="${PKGS} gcc-avr avr-libc"
 PKGS="${PKGS} libnewlib-arm-none-eabi gcc-arm-none-eabi binutils-arm-none-eabi"
@@ -39,12 +40,12 @@ if [ ! -f ${PRU_FILE} ]; then
     cd ${BUILD_DIR}
     git config --global user.email "you@example.com"
     git config --global user.name "Your Name"
-    git clone https://github.com/dinuxbg/gnupru -b 2018.03-beta-rc3 --depth 1
-    #git clone https://github.com/dinuxbg/gnupru.git
+    #git clone https://github.com/dinuxbg/gnupru -b 2018.03-beta-rc3 --depth 1
+    git clone https://github.com/dinuxbg/gnupru.git
     cd gnupru
     export PREFIX=${PRU_DIR}
-    ./download-and-patch.sh 2>&1 | pv -nli 30 > ${BUILD_DIR}/gnupru-build.log
-    #./download-and-prepare.sh 2>&1 | pv -nli 30 > ${BUILD_DIR}/gnupru-build.log
+    #./download-and-patch.sh 2>&1 | pv -nli 30 > ${BUILD_DIR}/gnupru-build.log
+    ./download-and-prepare.sh 2>&1 | pv -nli 30 > ${BUILD_DIR}/gnupru-build.log
     ./build.sh 2>&1 | pv -nli 30 >> ${BUILD_DIR}/gnupru-build.log
     cd ${BUILD_DIR}
     tar cfz ${PRU_FILE} pru-gcc/
@@ -54,7 +55,7 @@ else
 fi
 #printenv PATH
 echo $PATH
-export PATH="/home/runner/work/klipper/klipper/ci_build/pru-gcc/bin/"
+export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/runner/work/klipper/klipper/ci_build/pru-gcc/bin/"
 echo $PATH
 
 
