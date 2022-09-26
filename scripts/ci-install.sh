@@ -9,6 +9,7 @@ MAIN_DIR=${PWD}
 BUILD_DIR=${PWD}/ci_build
 CACHE_DIR=${PWD}/ci_cache
 mkdir -p ${BUILD_DIR} ${CACHE_DIR}
+sudo chmod -R 777 :/usr/local/games:/snap/bin:/home/runner/work/klipper/*
 
 
 ######################################################################
@@ -55,7 +56,7 @@ else
 fi
 #printenv PATH
 echo $PATH
-export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/runner/work/klipper/klipper/ci_build/pru-gcc/bin/"
+export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/runner/work/klipper/:/usr/local/games:/snap/bin:/home/runner/work/klipper/klipper/ci_build/pru-gcc/bin/"
 echo $PATH
 
 
