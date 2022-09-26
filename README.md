@@ -6,7 +6,9 @@ This build has been compled form 3 sources.
 3) KIAUH installer - https://github.com/th33xitus/kiauh
 
 CR-10 Smart configuration files are generic however the printer.cfg has been tested and is currently in use on my own machine.
-Do note that My mahine has been upgraded with the Bondtech LGXLit, Bondtech Arrow, MicroSwiss Hotend, adjusted strain gage to use less pressure, and Bed modification to add leveling screws (esintially making this comparable to teh CR-10 Smart Pro)
+Do note that My mahine has been upgraded with the Bondtech LGXLit, Bondtech Arrow, MicroSwiss Hotend, z bar backlash spring, adjusted strain gage to use less pressure, and Bed modification to add leveling screws (esintially making this comparable to teh CR-10 Smart Pro)
+
+Note that the touchscreen is still a work in progress
 
 Welcome to the Klipper project!
 
@@ -76,12 +78,23 @@ For downloading this script it is necessary to have git installed.\
 If you haven't, please run `sudo apt-get install git -y` to install git first.\
 After git is installed, use the following commands in the given order to download and execute the script:
 
+For the main branch maintained my the creator:
 ```shell
 cd ~
 
 git clone https://github.com/th33xitus/kiauh.git
 
 ./kiauh/kiauh.sh
+```
+
+For the version included in this repo:
+```shell
+cd ~
+
+git clone https://github.com/GregO1778/klipper.git
+
+cd ./klipper
+./kiauh.sh
 ```
 **📢 Disclaimer: Usage of this script happens at your own risk!**
 
