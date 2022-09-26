@@ -1,4 +1,12 @@
-# [?? New version available for testing](https://github.com/Desuuuu/klipper/discussions/74)
+# [Custom build for CR-10 Smart (CRC-2405V1.2)](https://github.com/Desuuuu/klipper/discussions/74)
+
+This build has been compled form 3 sources.
+1) Klipper 3D - https://www.klipper3d.org/ https://github.com/Klipper3d/klipper
+2) Klipper with DWIN/DGUS support - https://github.com/Desuuuu/klipper https://github.com/Desuuuu/DGUS-reloaded-Klipper https://github.com/Desuuuu/DGUS-reloaded-Klipper-config https://github.com/Desuuuu/DGUSPrinterMenu https://github.com/Desuuuu/klipper-macros
+3) KIAUH installer - https://github.com/th33xitus/kiauh
+
+CR-10 Smart configuration files are generic however the printer.cfg has been tested and is currently in use on my own machine.
+Do note that My mahine has been upgraded with the Bondtech LGXLit, Bondtech Arrow, MicroSwiss Hotend, adjusted strain gage to use less pressure, and Bed modification to add leveling screws (esintially making this comparable to teh CR-10 Smart Pro)
 
 Welcome to the Klipper project!
 
