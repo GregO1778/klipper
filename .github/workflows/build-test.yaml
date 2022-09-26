@@ -29,5 +29,5 @@ jobs:
         name: data-dict
         path: ci_build/dict
 
-    - #name: Prod
+    #- name: Prod
       #run: /bin/bash ./scripts/ci-prod_build.sh 2>&1
