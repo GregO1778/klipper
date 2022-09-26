@@ -9,7 +9,7 @@ MAIN_DIR=${PWD}
 BUILD_DIR=${PWD}/ci_build
 CACHE_DIR=${PWD}/ci_cache
 mkdir -p ${BUILD_DIR} ${CACHE_DIR}
-sudo chmod -R 777 :/usr/local/games:/snap/bin:/home/runner/work/klipper/*
+sudo chmod -R 777 /home/runner/work/klipper/*
 
 
 ######################################################################
