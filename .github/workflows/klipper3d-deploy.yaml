@@ -32,7 +32,7 @@ jobs:
         #run: chmod -R 777 ./*
 
       - name: Build MkDocs Pages
-        run: docs/_klipper3d/build-translations.sh
+        run: /bin/bash docs/_klipper3d/build-translations.sh
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
