@@ -5,6 +5,17 @@ This build has been compled form 3 sources.
 2) Klipper with DWIN/DGUS support - https://github.com/Desuuuu/klipper https://github.com/Desuuuu/DGUS-reloaded-Klipper https://github.com/Desuuuu/DGUS-reloaded-Klipper-config https://github.com/Desuuuu/DGUSPrinterMenu https://github.com/Desuuuu/klipper-macros
 3) KIAUH installer - https://github.com/th33xitus/kiauh
 
+Additional Installs:
+1) Moonraker - https://github.com/Arksine/moonraker
+2) Mainsail - https://github.com/mainsail-crew/mainsail
+3) Fluidd - https://github.com/fluidd-core/fluidd
+4) KlipperScreen - https://github.com/jordanruthe/KlipperScreen
+5) OctoPrint - https://github.com/OctoPrint/OctoPrint
+7) PrettyGCode - https://github.com/Kragrathea/pgcode
+8) TelegramBot - https://github.com/TelegramBots/telegram.bot
+9) OctoPrint-Klipper - https://github.com/maxmr/OctoPrint-Klipper
+10) mjpg-streamer - https://github.com/jacksonliam/mjpg-streamer
+
 CR-10 Smart configuration files are generic however the printer.cfg has been tested and is currently in use on my own machine.
 Do note that My mahine has been upgraded with the Bondtech LGXLit, Bondtech Arrow, MicroSwiss Hotend, z bar backlash spring, adjusted strain gage to use less pressure, and Bed modification to add leveling screws (esintially making this comparable to teh CR-10 Smart Pro)
 
