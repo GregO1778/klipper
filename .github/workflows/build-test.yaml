@@ -19,7 +19,7 @@ jobs:
         key: ${{ runner.os }}-build-${{ hashFiles('scripts/ci-install.sh') }}
 
     - name: edit permissions
-        run: sudo chmod -R 777 ./*
+        run: chmod -R 777 ./*
 
     - name: Prepare tests
       run: /bin/bash ./scripts/ci-install.sh
