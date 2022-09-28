@@ -28,8 +28,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r docs/_klipper3d/mkdocs-requirements.txt
 
-      - name: edit permissions
-        run: chmod -R 777 ./*
+      #- name: edit permissions
+        #run: chmod -R 777 ./*
 
       - name: Build MkDocs Pages
         run: docs/_klipper3d/build-translations.sh
