@@ -66,6 +66,3 @@ fi
 create_virtualenv
 modify_user
 echo_ok "SonicPi was installed"
-
-
-
