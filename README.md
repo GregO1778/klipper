@@ -17,7 +17,8 @@ Additional Installs:
 10) mjpg-streamer - https://github.com/jacksonliam/mjpg-streamer
 
 CR-10 Smart configuration files are generic however the printer.cfg has been tested and is currently in use on my own machine.
-Do note that My mahine has been upgraded with the Bondtech LGXLit, Bondtech Arrow, MicroSwiss Hotend, z bar backlash spring, FYSETC Portable Input Shaper on both Y (bed) and X (extruder), adjusted strain gage to use less pressure, and Bed modification to add leveling screws (esintially making this comparable to teh CR-10 Smart Pro)
+Do note that My mahine has been upgraded with the Bondtech LGXLit, Bondtech Arrow, MicroSwiss Hotend, z bar backlash spring, FYSETC Portable Input Shaper on both Y (bed) and X (extruder), adjusted strain gage to use less pressure,
+ and Bed modification to add leveling screws (esintially making this comparable to teh CR-10 Smart Pro). Using BTT HDMI7 touchscreen with RaspberryPi 4 8GB.
 
 Note that the touchscreen is still a work in progress
 
