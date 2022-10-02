@@ -1,0 +1,210 @@
+[{
+	"name": "ENDER series",
+	"level": 0,
+	"subnodes":[
+		{
+			"name":"Ender1",
+			"level":1 
+		},
+		{
+			"name":"Ender2",
+			"level":1 
+		},
+		{
+			"name":"Ender2S",
+			"level":1 
+		},
+		{
+			"name":"Ender3",
+			"level":1 
+		},
+		{
+			"name":"Ender4",
+			"level":1 
+		},
+		{
+			"name":"Ender3 V2",
+			"level":1 
+		},
+		{
+			"name":"Ender5",
+			"level":1 
+		},
+		{
+			"name":"Ender5 Plus",
+			"level":1 
+		},
+		{
+			"name":"Ender5 Pro",
+			"level":1 
+		},
+		{
+			"name":"Ender6",
+			"level":1
+		}
+	]
+},
+{
+	"name": "CR series",
+	"level": 0,
+	"subnodes":[
+		{
+			"name":"CR-5",
+			"level":1
+		},
+		{
+			"name":"CR-5 Pro",
+			"level":1
+		},
+		{
+			"name":"CR-5S",
+			"level":1
+
+		},
+		{
+			"name":"CR-6 SE",
+			"level":1
+
+		},
+		{
+			"name":"CR-10",
+			"level":1
+		},                
+		{
+			"name":"CR-10 Max",
+			"level":1
+		},              
+		{
+			"name":"CR-10 V2",
+			"level":1
+		},               
+		{
+			"name":"CR-10mini",
+			"level":1
+		},             
+		{
+			"name":"CR-10S",
+			"level":1
+		},
+		{
+			"name":"CR-10S Pro",
+			"level":1
+		},
+		{
+			"name":"CR-10S Pro V2",
+			"level":1
+		},
+		{
+			"name":"CR-10S4",
+			"level":1
+		},
+		{
+			"name":"CR-10S5",
+			"level":1
+
+		},
+		{
+			"name":"CR-20",
+			"level":1
+		},
+		{
+			"name":"CR-20 Pro",
+			"level":1
+		},
+		{
+			"name":"CR-100",
+			"level":1
+		},
+		{
+			"name":"CR-200B",
+			"level":1
+		},
+		{
+			"name":"CR-2020",
+			"level":1
+		},
+		{
+			"name":"CR-2526",
+			"level":1
+		},
+		{
+			"name":"CR-3040",
+			"level":1
+		},
+		{
+			"name":"CR-4026",
+			"level":1
+		},
+		{
+			"name":"CR-4040",
+			"level":1
+		},
+		{
+			"name":"CR-5060",
+			"level":1
+		},
+		{
+			"name":"CR-5080",
+			"level":1
+		},
+		{
+			"name":"CR-X",
+			"level":1
+		},
+		{
+			"name":"CR-10Smart",
+			"level":1
+		},
+		{
+			"name":"CR-10 Inspire",
+			"level":1
+		}
+	]
+},
+{
+	"name": "Sermoon series",
+	"level": 0,
+	"subnodes":[
+		{
+			"name":"Sermoon-V1",
+			"level":1 
+		},
+		{
+			"name":"Sermoon-D1",
+			"level":1 
+		}
+	]
+},
+{
+	"name": "CT series",
+	"level": 0,
+	"subnodes":[
+		{
+			"name":"CT-005",
+			"level":1 
+		},
+		{
+			"name":"CT-005 Pro",
+			"level":1 
+		},
+		{
+			"name":"CT-228",
+			"level":1 
+		},
+		{
+			"name":"CT-300",
+			"level":1 
+		}
+	]
+},
+{
+	"name": "Supper big",
+	"level": 0,
+	"subnodes":[
+		{
+			"name":"G5",
+			"level":1 
+		}
+	]
+}
+]

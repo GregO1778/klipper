@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["locale-ru-js"],{b9ee:function(e,o,p){"use strict";p.r(o);var t={BootGuide:{preStep:"上一步",nextStep:"下一步"}};o["default"]=t}}]);

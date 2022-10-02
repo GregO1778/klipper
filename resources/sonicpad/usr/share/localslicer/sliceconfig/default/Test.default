@@ -1,0 +1,11 @@
+machine_name=Creality G5
+machine_width=500
+machine_depth=500
+machine_height=500
+machine_head_with_fans_polygon=[[-20,10],[10,10],[10,-10],[-20,-10]]
+machine_extruder_count=2
+export_format=gcode
+machine_shape=rectangle
+machine_heated_bed=true
+machine_nozzle_size=0.4
+retraction_min_travel_flow=false

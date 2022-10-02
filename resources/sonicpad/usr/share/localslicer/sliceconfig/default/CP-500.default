@@ -1,0 +1,10 @@
+machine_name=Creality CP-500
+machine_width=320
+machine_depth=300
+machine_height=350
+machine_head_with_fans_polygon=[[-30,15],[15,15],[15,-15],[-30,-15]]
+export_format=gcode
+machine_shape=rectangle
+machine_heated_bed=true
+machine_extruder_count=1
+machine_nozzle_size=0.4

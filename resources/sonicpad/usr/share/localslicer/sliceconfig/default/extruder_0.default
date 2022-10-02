@@ -1,0 +1,4 @@
+machine_nozzle_offset_x=0
+material_print_temperature=200
+machine_extruder_start_code=\nT0 ;switch to extruder 0\nG92 E0 ;reset extruder distance\nG1 F2000 E93 ;load filament\nG92 E0 ;reset extruder distance\nM104 S200
+machine_extruder_end_code=\nG92 E0 ;reset extruder distance\nG1 F800 E-5 ;short retract\nG1 F2400 X295 Y265 ;move near prime tower\nG1 F2000 E-93 ;long retract for filament removal\nG92 E0 ;reset extruder distance\nG90

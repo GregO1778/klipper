@@ -1,0 +1,16 @@
+version=1
+machine_name=Creality LD-CL-133
+machine_slicer_type=DLP
+machine_width=293.76
+machine_depth=165.24
+machine_height=300
+machine_head_with_fans_polygon=[[0,0],[0,0],[0,0],[0,0]]
+machine_extruder_count=1
+resolution_x=3840
+resolution_y=2160
+basic_offset_thickness=0.5
+basic_ofsset_focal_length=450
+meshfix_union_all=false
+export_format=cxdlp
+format_version=2
+mirror_type=normal

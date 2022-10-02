@@ -1,0 +1,13 @@
+machine_name=Creality3D CR-30
+machine_width=200
+machine_depth=170
+machine_height=99999
+machine_head_with_fans_polygon=[[-20,10],[10,10],[10,-10],[-20,-10]]
+export_format=gcode
+machine_shape=rectangle
+machine_heated_bed=true
+machine_extruder_count=1
+machine_nozzle_size=0.4
+speed_layer_0=10
+speed_print_layer_0=10
+speed_travel_layer_0=10

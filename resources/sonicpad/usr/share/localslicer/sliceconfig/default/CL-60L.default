@@ -1,0 +1,16 @@
+version=1
+machine_name=Creality LD-CL-60L
+machine_slicer_type=DLP
+machine_width=82.62
+machine_depth=130.56
+machine_height=160
+machine_head_with_fans_polygon=[[0,0],[0,0],[0,0],[0,0]]
+machine_extruder_count=1
+resolution_x=1620
+resolution_y=2560
+basic_offset_thickness=0.5
+basic_ofsset_focal_length=198
+meshfix_union_all=false
+export_format=cxdlp
+format_version=3
+mirror_type=normal

@@ -1,0 +1,14 @@
+version=1
+machine_name=Creality LD-X01
+machine_slicer_type=DLP
+machine_width=121
+machine_depth=68.0625
+machine_height=160
+machine_head_with_fans_polygon=[[0,0],[0,0],[0,0],[0,0]]
+machine_extruder_count=1
+resolution_x=2560
+resolution_y=1440
+meshfix_union_all=false
+export_format=cxdlp
+mirror_type=normal
+advanced_enabled=1

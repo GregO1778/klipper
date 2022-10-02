@@ -1,0 +1,15 @@
+machine_name=K-8
+machine_width=810
+machine_depth=810
+machine_height=85
+machine_head_with_fans_polygon=[[-20,10],[10,10],[10,-10],[-20,-10]]
+export_format=gcode
+machine_shape=rectangular
+machine_heated_bed=true
+machine_extruder_count=2
+machine_nozzle_size=0.8
+extruders_enabled_count=2
+print_head_min_x=-37
+print_head_max_x=37
+print_head_min_y=-28
+print_head_max_y=28

@@ -1,0 +1,16 @@
+topContactType=0
+topContactRadius=0.80
+topContactDepth=0.40
+topLinkType=0
+topLinkTRadius=0.40
+topLinkBRadius=0.90
+topLinkLen=2.00
+middleRadius=1.20
+bottomHeight=1.0
+bottomTRadius=3.5
+bottomBRadius=3.0
+modelContactLen=0.20
+platform=true
+RaftType=None
+RaftRatio=1.1
+RaftHeight=0.3

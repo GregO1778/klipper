@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["locale-it-js"],{"55f5":function(e,t,o){"use strict";o.r(t);var p={BootGuide:{preStep:"上一步",nextStep:"下一步"}};t["default"]=p}}]);

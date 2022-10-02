@@ -1,0 +1,11 @@
+current_no: v1.2.0
+current_version: 20201207
+download_url: http://120.79.128.87:8089/home/c-smart-brain.tar.gz
+hash_key: 1912a19112ecadd6d7c579612535ff10
+upgrade_command: false
+upgrade_domain: http://120.79.128.87
+upgrade_files_path: /mnt/UDISK/.crealityprint/upgrade/20201224.tar.gz
+version: 20201224
+version_comment: "这个版本是一个最新的版本.........。\r\n1,更新了设置域名出错\r\n2,,下载完成可以忽略\r\n3,啦啦啦啦"
+version_explain: hdshdhshdhhsdh。1,更新了哈哈哈。1,打扫打扫。
+version_no: v1.3.2

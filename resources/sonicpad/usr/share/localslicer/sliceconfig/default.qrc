@@ -1,0 +1,119 @@
+<RCC>
+    <qresource prefix="/us">
+		<file>default/fdm.ad.def.json</file>
+        <file>default/fdm.def.json</file>
+        <file>default/fdm_cloud.def.json</file>
+        <file>default/modelsettings.default</file>
+        <file>default/modellistsettings.default</file>
+        <file>default/globalsettings.default</file>
+        <file>default/Ender3.default</file>
+        <file>default/MachineType.default</file>
+        <file>default/high.default</file>
+        <file>default/low.default</file>
+        <file>default/middle.default</file>
+        <file>default/CR-5.default</file>
+        <file>default/CR-5S.default</file>
+        <file>default/CR-10.default</file>
+		<file>default/CR-10 Inspire.default</file>
+        <file>default/CR-10mini.default</file>
+        <file>default/CR-10S Pro.default</file>
+        <file>default/CR-10S.default</file>
+        <file>default/CR-10S4.default</file>
+        <file>default/CR-10S5.default</file>
+        <file>default/CR-20 Pro.default</file>
+        <file>default/CR-20.default</file>
+        <file>default/CR-200B.default</file>
+        <file>default/CR-100.default</file>
+		<file>default/CR-200B.default</file>
+        <file>default/CR-2020.default</file>
+        <file>default/CR-2526.default</file>
+        <file>default/CR-3040.default</file>
+        <file>default/CR-4040.default</file>
+        <file>default/CR-5060.default</file>
+        <file>default/CR-5080.default</file>
+        <file>default/CR-X.default</file>
+        <file>default/Sermoon-M2.default</file>
+        <file>default/Sermoon-M2high.default</file>
+        <file>default/Sermoon-M2middle.default</file>
+        <file>default/Sermoon-M2low.default</file>
+        <file>default/Ender1.default</file>
+        <file>default/Ender2.default</file>
+		<file>default/Ender2S.default</file>
+        <file>default/Ender4.default</file>
+        <file>default/Ender5.default</file>
+        <file>default/Ender6.default</file>
+        <file>default/CP-01.default</file>
+        <file>default/LD-001.default</file>
+        <file>default/LD-X01.default</file>
+        <file>default/LD-003.default</file>
+        <file>default/CP-500.default</file>
+        <file>default/CR-10 Max.default</file>
+        <file>default/CR-10 V2.default</file>
+        <file>default/CR-10S Pro V2.default</file>
+        <file>default/CR-4026.default</file>
+        <file>default/CR-5 Pro.default</file>
+        <file>default/CR-6 SE.default</file>
+        <file>default/CT-005.default</file>
+        <file>default/CT-005 Pro.default</file>
+        <file>default/CT-228.default</file>
+        <file>default/CT-300.default</file>
+        <file>default/Ender3 V2.default</file>
+        <file>default/Ender5 Plus.default</file>
+        <file>default/Ender5 Pro.default</file>
+		<file>default/K-3.default</file>
+		<file>default/K-3Pro.default</file>
+		<file>default/K-6.default</file>
+		<file>default/K-8.default</file>
+		<file>default/T-5.default</file>
+        <file>default/ABS.default</file>
+        <file>default/PLA.default</file>
+        <file>default/extrudersettings.default</file>
+        <file>default/globalsettings_cloud.default</file>
+        <file>default/high-dlp.default</file>
+        <file>default/low-dlp.default</file>
+        <file>default/middle-dlp.default</file>
+        <file>default/supportH.default</file>
+        <file>default/supportL.default</file>
+        <file>default/supportM.default</file>
+        <file>default/supportAuto.default</file>
+        <file>default/Normal.default</file>
+        <file>default/Castable.default</file>
+        <file>default/LD-X02.default</file>
+		<file>default/CL-89.default</file>
+		<file>default/CL-60.default</file>
+		<file>default/CL-133.default</file>
+		<file>default/LD-002H.default</file>
+		<file>default/LD-002H AIR.default</file>
+        <file>default/117.profile</file>
+        <file>default/creality_base.default</file>
+        <file>default/EnderNew.default</file>
+        <file>default/extruder.default</file>
+        <file>default/Sermoon-M2extruder.default</file>
+        <file>default/extruder_0.default</file>
+        <file>default/extruder_1.default</file>
+        <file>default/fdm.def.default</file>
+        <file>default/high-AD.default</file>
+        <file>default/low-AD.default</file>
+        <file>default/middle-AD.default</file>
+		<file>default/CR-10Smart.default</file>
+        <file>default/CR-10Smarthigh.default</file>
+        <file>default/CR-10Smartlow.default</file>
+        <file>default/CR-10Smartmiddle.default</file>
+		<file>default/Sermoon-V1.default</file>
+        <file>default/Sermoon-V1high.default</file>
+        <file>default/Sermoon-V1low.default</file>
+        <file>default/Sermoon-V1middle.default</file>
+		<file>default/Sermoon-D1.default</file>
+        <file>default/Sermoon-D1high.default</file>
+        <file>default/Sermoon-D1low.default</file>
+        <file>default/Sermoon-D1middle.default</file>
+		<file>default/G5.default</file>
+		<file>default/G5high.default</file>
+        <file>default/G5low.default</file>
+        <file>default/G5middle.default</file>
+        <file>default/Test.default</file>
+		<file>default/machineList.json</file>
+		<file>default/machineList_sub.json</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

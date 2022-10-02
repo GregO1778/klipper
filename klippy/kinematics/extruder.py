@@ -196,10 +196,6 @@ class PrinterExtruder:
             or config.get('rotation_distance', None) is not None):
             self.extruder_stepper = ExtruderStepper(config)
             self.extruder_stepper.stepper.set_trapq(self.trapq)
-            pa = config.getfloat('pressure_advance', 0., minval=0.)
-            smooth_time = config.getfloat('pressure_advance_smooth_time',
-                                          0.040, above=0., maxval=.200)
-            self.extruder_stepper._set_pressure_advance(pa, smooth_time)
         # Register commands
         gcode = self.printer.lookup_object('gcode')
         if self.name == 'extruder':

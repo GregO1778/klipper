@@ -1,0 +1,22 @@
+machine_name=Creality G5
+machine_width=500
+machine_depth=500
+machine_height=500
+machine_head_with_fans_polygon=[[-20,10],[10,10],[10,-10],[-20,-10]]
+machine_extruder_count=2
+export_format=gcode
+machine_shape=rectangle
+machine_heated_bed=true
+machine_nozzle_size=1.0
+special_retraction_min_travel_flow=true
+special_material_flow_travel=100
+special_retraction_min_travel=5.0
+special_retraction_flow_in_advance=10.0
+
+material_diameter=3.5
+infill_material_flow=200
+skin_overlap=20
+skin_overlap_mm=0
+
+
+

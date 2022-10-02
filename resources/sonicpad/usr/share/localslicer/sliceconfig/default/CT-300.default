@@ -1,0 +1,10 @@
+machine_name=Creality CT-300
+machine_width=315
+machine_depth=315
+machine_height=415
+machine_head_with_fans_polygon=[[-20,10],[10,10],[10,-10],[-20,-10]]
+export_format=gcode
+machine_shape=rectangle
+machine_heated_bed=true
+machine_extruder_count=1
+machine_nozzle_size=0.4

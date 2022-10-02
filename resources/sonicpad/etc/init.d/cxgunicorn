@@ -1,0 +1,49 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+STOP=1
+USE_PROCD=1
+PROG=/usr/share/creality-env/bin/python
+LOG_FILE=/var/log/gunicorn.log
+
+start_gunicorn() {
+	# set core file size
+	ulimit -c unlimited
+
+	cd /usr/share/klipper-brain/CrealityPrint/
+	$PROG manage.py runserver 0.0.0.0:8004 --noreload > /dev/null 2>&1
+}
+
+stop_gunicorn() {
+	gunicorn=`ps -w | grep -w manage.py | grep -v grep | awk '{print $1}'`
+        [ -n "$gunicorn" ] && {
+                for pid in "$gunicorn"
+                do
+                        kill -9 $pid
+                done
+
+		sleep 1
+		gunicorn=`ps -w | grep -w manage.py | grep -v grep | awk '{print $1}'`
+		[ -n "$gunicorn" ] && {
+			for pid in "$gunicorn"
+			do
+				kill -9 $pid
+			done
+		}
+        }
+}
+
+start_service() {
+	start_gunicorn
+}
+
+stop_service() {
+	stop_gunicorn
+}
+
+reload_service() {
+	stop_gunicorn
+	sleep 1
+	start_gunicorn
+}
+

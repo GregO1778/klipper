@@ -1,0 +1,2 @@
+machine_extruder_start_code=\nG92 E0 ;reset extruder distance\nM104 S200
+machine_extruder_end_code=\nG92 E0 ;reset extruder distance\nG1 F800 E-5 ;short retract\nG92 E0 ;reset extruder distance\nG90

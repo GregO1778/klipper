@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["locale-ar-js"],{b33d:function(e,a,o){"use strict";o.r(a);var p={BootGuide:{preStep:"ar 上一步",nextStep:"ar 下一步"}};a["default"]=p}}]);

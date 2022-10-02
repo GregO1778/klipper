@@ -1,0 +1,18 @@
+machine_name=Sermoon-M2
+machine_width=228
+machine_depth=228
+machine_height=300
+machine_head_with_fans_polygon=[[-20,10],[10,10],[10,-10],[-20,-10]]
+machine_extruder_count=1
+export_format=gcode
+machine_shape=rectangle
+machine_heated_bed=true
+
+machine_nozzle_size=1.8
+
+material_diameter=2.85
+
+machine_start_gcode=Machine Start Gcode; \n
+
+z_seam_x = 203.9
+z_seam_y = 117.0
