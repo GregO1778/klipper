@@ -1,0 +1,47 @@
+[submodule "klipper"]
+	path = klipper
+	url = https://github.com/Klipper3d/klipper.git
+
+[submodule "kiaum"]
+	path = kiaum
+	url = https://github.com/th33xitus/kiauh.git
+	
+[submodule "moonraker"]
+	path = moonraker
+	url = https://github.com/Arksine/moonraker.git
+
+[submodule "Mainsail"]
+	path = Mainsail
+	url = https://github.com/mainsail-crew/mainsail.git
+
+[submodule "fluidd"]
+	path = fluidd
+	url = https://github.com/fluidd-core/fluidd.git
+
+[submodule "KlipperScreen"]
+	path = KlipperScreen
+	url = https://github.com/jordanruthe/KlipperScreen.git
+
+[submodule "OctoPrint"]
+	path = OctoPrint
+	url = https://github.com/OctoPrint/OctoPrint.git
+
+[submodule "PrettyGCode"]
+	path = PrettyGCode
+	url = https://github.com/Kragrathea/pgcode.git
+
+[submodule "TelegramBot"]
+	path = TelegramBot
+	url = https://github.com/TelegramBots/Telegram.Bot.git
+
+[submodule "OctoPrint-Klipper"]
+	path = OctoPrint-Klipper
+	url = https://github.com/maxmr/OctoPrint-Klipper.git
+
+[submodule "mjpg-streamer"]
+	path = mjpg-streamer
+	url = https://github.com/jacksonliam/mjpg-streamer.git
+
+[submodule "ustreamer"]
+	path = ustreamer
+	url = https://github.com/pikvm/ustreamer.git

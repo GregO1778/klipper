@@ -15,6 +15,8 @@ Additional Installs:
 8) TelegramBot - https://github.com/TelegramBots/telegram.bot
 9) OctoPrint-Klipper - https://github.com/maxmr/OctoPrint-Klipper
 10) mjpg-streamer - https://github.com/jacksonliam/mjpg-streamer
+11) ustreamer (mjpg-streamer alternative) - https://github.com/pikvm/ustreamer
+12) Creality Sonic Pad - https://github.com/CrealityOfficial/Creality_Sonic_Pad https://www.creality.com/pages/download-creality-sonic-pad
 
 CR-10 Smart configuration files are generic however the printer.cfg has been tested and is currently in use on my own machine.
 Do note that My mahine has been upgraded with the Bondtech LGXLit, Bondtech Arrow, MicroSwiss Hotend, z bar backlash spring, FYSETC Portable Input Shaper on both Y (bed) and X (extruder), adjusted strain gage to use less pressure,
